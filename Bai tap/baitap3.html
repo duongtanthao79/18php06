@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			width: 1000px;
+			height: 800px;
+		}
+
+		#header {
+			background-color: #c7a5e5;
+			height: 10%;
+			border-bottom: solid;
+		}
+
+		#outer-container {
+			height: 80%;
+			width: 100%;
+		}
+
+		#outer-container .left-pane {
+			background-color: #c7a5e5;
+			float: left;
+			width: 20%;
+			height: 100%;
+			border-right: solid;
+		}
+
+		#outer-container .right-pane {
+			background-color: #c7a5e5;
+			width: 20%;
+			float: right;
+			height: 100%;
+			border-left: solid;
+
+		}
+
+		#outer-container .inner-container {
+			width: 59.3%;
+			height: 100%
+			margin-left: 20%;
+			float: left;
+		}
+
+		#outer-container .inner-container .pre-body {
+			background-color: lightgray;
+			height: 150px;
+			width: 100%;
+		}
+
+		#outer-container .inner-container .body {
+			height: 332px;
+			width: 100%; 
+			border-top: solid;
+			border-bottom: solid;
+		}
+
+		#outer-container .inner-container .body .body-text {
+			padding-top: 25%;
+			text-align: center;
+		}
+
+		#outer-container .inner-container .post-body {
+			background-color: lightgray;
+			height: 150px;
+			width: 100%;
+		}
+
+		#footer {
+			background-color: #c7a5e5;
+			height: 10%;
+			border-top: solid;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		Header
+	</div>
+	<div id="outer-container">
+		<div class="left-pane">
+			left pane
+		</div>
+		<div class="inner-container">
+			<div class="pre-body">
+				pre-body
+			</div>
+			<div class="body">
+				<div class="body-text">
+					<b>body (content)</b>
+				</div>
+			</div>
+			<div class="post-body">
+				post-body
+			</div>
+		</div>
+		<div class="right-pane">
+			right pane
+		</div>
+	</div>
+	<div id="footer">Footer</div>
+</body>
+</html>

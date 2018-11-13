@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#username {
+			width: 45%;
+			height: 40px;
+		}
+
+		#password {
+			width: 45%;
+			height: 40px;
+		}
+
+		#submit, #forward, #back {
+			margin-top: 1%;
+			width: 100px;
+			height: 40px;
+		}
+
+		#note {
+			color: red;
+		}
+
+		form {
+			margin-top: 3%;
+			width: 400px;
+		}
+
+		#success {
+			color: green;
+		}
+
+		#slider{ 
+			margin-top: 100px;
+		}
+
+		#slider, .image_size {
+			width: 500px;
+			height: 300px;
+		}
+
+		.show {
+			display: block;
+		}
+		.hidden {
+			display: none;
+		}
+
+		#second, #third {
+			opacity: 0;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<p id="demo1">...</p>
+	<p id="note"></p>
+	<form>
+		<input id="username" type="text" name="username" placeholder="Username"> 
+		<input id="password" type="password" name="password" placeholder="password">
+		<button id="submit" type="button" name="submit">
+	</form>
+	<p id="success" style="margin-top: 1%;"></p>
+
+	<button id="back" type="button" name="submit">Back
+	<button id="forward" type="button" name="submit">Next
+
+	<div id="slider">
+		<div id="first" class="img show">
+			<img class="image_size" src="image1.jpg">
+		</div>
+
+		<div id="second" class="img show hidden">
+			<img class="image_size" src="image2.jpg">
+		</div>
+
+		<div id="third" class="img show hidden">
+			<img class="image_size" src="image3.jpg">
+		</div>
+	</div>
+	<script type="text/javascript" src="exercise.js"></script>
+</body>
+</html>
